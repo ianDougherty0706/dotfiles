@@ -1,8 +1,8 @@
 {
-  "margin-bottom": 2,
-  "margin-top": 4,
-  "margin-left": 4,
-  "margin-right": 4,
+  "margin-bottom": 0,
+  "margin-top": 6,
+  "margin-left": 6,
+  "margin-right": 6,
   "no-center": true,
   "exclusive": true,
   "reload_style_on_change": true,
@@ -13,7 +13,6 @@
     "hyprland/workspaces"
   ],
   "modules-right": [
-    "bluetooth",
     "pulseaudio",
     "backlight",
     "battery",
