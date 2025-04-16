@@ -1,0 +1,137 @@
+{
+  "margin-bottom": 2,
+  "margin-top": 4,
+  "margin-left": 4,
+  "margin-right": 4,
+  "no-center": true,
+  "exclusive": true,
+  "reload_style_on_change": true,
+  "layer": "top",
+  "position": "top",
+  "modules-left": [
+    "tray",
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "bluetooth",
+    "pulseaudio",
+    "backlight",
+    "battery",
+    "clock",
+    "custom/notification"
+  ],
+  "tray": {
+    "icon-size": 15,
+    "spacing": 8 
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10"
+    }
+  },
+  "network": {
+    "format-wifi": "    {essid}",
+    "interval": 5,
+    "tooltip-format": "({signalStrength}%)   {bandwidthUpBits}  {bandwidthDownBits}",
+    "format-linked": "{ifname} (No IP)",
+    "format-disconnected": "Disconnected ⚠"
+  },
+  "bluetooth": {
+    "format": " {status}",
+    "format-disabled": "",
+    "format-connected": " {num_connections}",
+    "tooltip-format": "{device_alias}",
+    "tooltip-format-connected": " {device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}"
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15 
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-tooltip": "{time}",
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ]
+  },
+  "backlight": {
+    "tooltip": false,
+    "scroll-step": 0,
+    "device": "intel_backlight",
+    "format": "{icon}  {percent}%",
+    "format-icons": [
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ]
+  },
+  "pulseaudio": {
+    "format": "{icon}   {volume}%",
+    "tooltip": false,
+    "format-muted": " Muted",
+    "scroll-step": 0,
+    "on-click": "pavucontrol",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    }
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%F}",
+    "interval": 60
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  }
+}

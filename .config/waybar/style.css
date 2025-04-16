@@ -1,0 +1,90 @@
+@import url('./mocha.css');
+
+* {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  font-family: "Inter", "JetBrains Mono";
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0;
+}
+
+#custom-notification {
+  margin-right: 6px;
+}
+
+tooltip {
+  background: @base;
+  border-radius: 6px;
+  border: 1px solid @lavender;
+}
+
+window {
+  background: @base;
+  border-radius: 6px;
+  border: 1px solid @lavender;
+}
+
+#workspaces button {
+  color: rgba(205, 214, 244, 0.25);
+}
+
+#workspaces button.active {
+  color: @lavender;
+}
+
+#workspaces button.urgent {
+  color: @red;
+}
+
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#custom-notification,
+#custom-temperature,
+#custom-memory,
+#workspaces,
+#tray,
+#backlight {
+  opacity: 1;
+  padding: 0px 10px;
+}
+
+#backlight {
+}
+
+#tray {
+}
+
+#workspaces {
+}
+
+#clock {
+  color: @yellow;
+}
+
+#bluetooth {
+  color: @blue;
+} 
+
+#pulseaudio {
+  color: @blue;
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.warning {
+  color: @peach;
+}
+
+#battery.critical {
+  color: @red;
+} 
+
