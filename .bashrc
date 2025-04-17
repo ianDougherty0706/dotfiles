@@ -7,7 +7,7 @@
 
 alias ls='eza -a1 --icons --sort=type'
 alias vim='nvim'
-alias grep='grep --color=auto'
+alias grep='rg'
 alias cat='bat -p'
 alias pi='sudo pacman -S'
 alias pu='sudo pacman -Syu'
