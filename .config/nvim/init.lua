@@ -97,6 +97,11 @@ vim.opt.smarttab = true
 
 vim.wo.wrap = false
 
+vim.keymap.set("i", "<C-h>", "<Left>", { noremap = true })
+vim.keymap.set("i", "<C-j>", "<Down>", { noremap = true })
+vim.keymap.set("i", "<C-k>", "<Up>", { noremap = true })
+vim.keymap.set("i", "<C-l>", "<Right>", { noremap = true })
+
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
