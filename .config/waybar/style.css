@@ -60,6 +60,7 @@ window {
 
 #clock {
   color: @text;
+  margin-right: 8px;
 }
 
 #bluetooth {
