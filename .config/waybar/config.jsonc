@@ -1,6 +1,6 @@
 {
-  "margin-bottom": 0,
-  "margin-top": 6,
+  "margin-bottom": -2,
+  "margin-top": 2,
   "margin-left": 6,
   "margin-right": 6,
   "no-center": true,
@@ -16,11 +16,11 @@
     "pulseaudio",
     "backlight",
     "battery",
-    "clock",
+    "clock"
   ],
   "tray": {
     "icon-size": 15,
-    "spacing": 8 
+    "spacing": 6 
   },
   "hyprland/workspaces": {
     "format": "{icon}",
