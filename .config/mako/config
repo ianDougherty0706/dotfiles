@@ -2,16 +2,18 @@
 
 background-color=#11111b
 text-color=#cdd6f4
-border-color=#11111b
 border-radius=4
-border-size=2
+border-size=0
+layer=overlay
+width=400
 progress-color=over #313244
-anchor=top-right
-margin=10
-font=Inter 12
-history=1
+anchor=top-center
+margin=0
+font=Inter 10
+max-history=20
+max-icon-size=50
 padding=2
-on-touch=dismiss --no-history
+on-button-left=dismiss --no-history
 
 [urgency=high]
 border-color=#eba0ac
