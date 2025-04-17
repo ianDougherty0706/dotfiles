@@ -224,7 +224,7 @@ load_plugins {
  
 simplified_ui true
 
-theme "catppuccin-mocha"
+theme "gruvbox-dark"
 
 default_mode "locked"
  
@@ -252,7 +252,7 @@ attach_to_session true
 // 
 // auto_layout false
  
-session_serialization false
+session_serialization true
  
 serialize_pane_viewport true
 scrollback_lines_to_serialize 10000

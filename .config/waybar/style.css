@@ -12,7 +12,7 @@
 }
 
 tooltip {
-  background: @crust;
+  background: #0c0d0e;
   border-radius: 4px;
 }
 
@@ -58,7 +58,7 @@ window {
 }
 
 #tray menu{
-  background: @crust;
+  background: #0c0d0e;
   border-radius: 4px;
 }
 

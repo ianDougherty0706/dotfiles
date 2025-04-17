@@ -1,0 +1,170 @@
+configuration {
+	modi: "window,drun,run";
+	font: "Inter,JetBrainsMono NFM 13";
+	fixed-num-lines: true;
+	show-icons: true;
+	terminal: "kitty";
+	run-shell-command: "kitty -e {cmd}";
+	drun-url-launcher: "xdg-open";
+	sort: true;
+	sorting-method: "fzf";
+	case-sensitive: false;
+	sidebar-mode: false;
+	scroll-method: 1;
+	kb-accept-entry: "Return";
+	kb-row-up: "Control+p";
+	kb-row-down: "Control+n";
+
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+* {
+    crust:    #0c0d0e;
+    text:     #cdd6f4;
+    subtext1: #bac2de;
+    base:     #1d2021;
+    mantle:   #181825;
+    surface0: #313244;
+    blue:     #89b4fa;
+    yellow:   #f9e2af;
+    overlay0: #6c7086;
+}
+element {
+    padding:	   6;
+    cursor:	   pointer;
+    spacing:	   10;
+    border:	   0;
+    border-radius: 3;
+}
+element normal.normal {
+    background-color: var(crust);
+    text-color:       var(overlay0);
+}
+element normal.urgent {
+    background-color: var(crust);
+    text-color:       var(overlay0);
+}
+element normal.active {
+    background-color: var(crust);
+    text-color:       var(overlay0);
+}
+element selected.normal {
+    background-color: var(base);
+    text-color:       var(text);
+}
+element selected.urgent {
+    background-color: var(crust);
+    text-color:       var(overlay0);
+}
+element selected.active {
+    background-color: var(crust);
+    text-color:       var(overlay0);
+}
+element alternate.normal {
+    background-color: var(crust);
+    text-color:       var(overlay0);
+}
+element alternate.urgent {
+    background-color: var(crust);
+    text-color:       var(overlay0);
+}
+element alternate.active {
+    background-color: var(crust);
+    text-color:       var(overlay0);
+}
+element-text {
+    background-color: transparent;
+    cursor:           inherit;
+    highlight:        inherit;
+    text-color:       inherit;
+}
+
+element-icon {
+    background-color: transparent;
+    size:             1.0000em ;
+    cursor:           inherit;
+    text-color:       inherit;
+}
+
+window {
+    padding:          6;
+    height:	      231;
+    width:	      520;
+    background-color: var(crust);
+    border:           0;
+    border-radius:    4;
+}
+
+mainbox {
+    padding:	      0;
+    background-color: var(crust);
+    border:	      0;
+}
+
+message {
+    padding:      1;
+    border-color: var(surface0);
+    border:	  2 solid 0 0;
+    border:       2 solid 0 0;
+}
+
+prompt {
+    color: var(text);
+    padding: 6;
+}
+    
+textbox {
+    text-color: var(text);
+}
+
+listview {
+    padding:      3 0 0;
+    scrollbar:    false;
+    border-color: var(surface0);
+    spacing:      3;
+    border:       2 solid 0 0;
+}
+
+sidebar {
+    border-color: pink;
+    border:       2 dash 0 0;
+}
+
+button {
+    cursor:     pointer;
+    spacing:    0;
+    text-color: var(text);
+}
+
+button selected {
+    background-color: var(blue);
+    text-color:       var(text);
+}
+
+inputbar {
+    padding:    1;
+    spacing:    0;
+    text-color: var(text);
+    children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
+}
+
+case-indicator, num-rows, num-filtered-rows, textbox-num-sep, textbox-prompt-colon {
+    enabled: false;
+}
+
+entry {
+    text-color:        var(text);
+    cursor:            text;
+    padding:	       6 2;
+    spacing:           0;
+    placeholder-color: var(subtext1);
+    placeholder:       "";
+}

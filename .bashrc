@@ -15,5 +15,5 @@ alias pr='sudo pacman -Rs'
 alias yi='sudo yay -S'
 
 export PATH=$PATH:/home/ian/.local/bin
-eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/catppuccin_mocha.omp.json)"
+eval "$(oh-my-posh init bash --config ~/dotfiles/.config/oh-my-posh/prompt.omp.json)"
 

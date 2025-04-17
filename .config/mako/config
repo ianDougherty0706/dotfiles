@@ -1,6 +1,6 @@
 # Colors
 
-background-color=#11111b
+background-color=#0c0d0e
 text-color=#cdd6f4
 border-radius=4
 border-size=0
@@ -8,7 +8,7 @@ layer=overlay
 width=400
 progress-color=over #313244
 anchor=top-center
-margin=0
+margin=6
 font=Inter 10
 max-history=20
 max-icon-size=50
