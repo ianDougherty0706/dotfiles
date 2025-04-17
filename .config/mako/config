@@ -1,0 +1,17 @@
+# Colors
+
+background-color=#11111b
+text-color=#cdd6f4
+border-color=#11111b
+border-radius=4
+border-size=2
+progress-color=over #313244
+anchor=top-right
+margin=10
+font=Inter 12
+history=1
+padding=2
+on-touch=dismiss --no-history
+
+[urgency=high]
+border-color=#eba0ac

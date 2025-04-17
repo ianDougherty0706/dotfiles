@@ -11,13 +11,9 @@
   min-height: 0;
 }
 
-#custom-notification {
-  margin-right: 6px;
-}
-
 tooltip {
   background: @base;
-  border-radius: 6px;
+  border-radius: 4px;
   border: 1px solid @lavender;
 }
 
@@ -29,7 +25,7 @@ window {
 
 #workspaces button {
   color: rgba(205, 214, 244, 0.25);
-  padding: 4px 4;
+  padding: 4px;
 }
 
 #workspaces button.active {
@@ -59,6 +55,7 @@ window {
 }
 
 #tray {
+  margin-left: 8px;
 }
 
 #clock {
