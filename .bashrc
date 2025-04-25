@@ -17,6 +17,4 @@ alias yi='yay -S'
 alias yr='yay -R'
 
 export PATH=$PATH:/home/ian/.local/bin
-#eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/pure.omp.json)"
 eval "$(starship init bash)"
-
