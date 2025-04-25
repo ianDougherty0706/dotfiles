@@ -1,15 +1,17 @@
 {
-  "margin-bottom": -2,
-  "margin-top": 2,
-  "margin-left": 6,
-  "margin-right": 6,
-  "no-center": true,
+  "margin-bottom": -5,
+  "margin-top": 1,
+  "margin-left": 5,
+  "margin-right": 5,
+  "no-center": false,
   "exclusive": true,
   "reload_style_on_change": true,
   "layer": "top",
   "position": "top",
   "modules-left": [
-    "tray",
+    "tray"
+  ],
+  "modules-center": [
     "hyprland/workspaces"
   ],
   "modules-right": [
@@ -20,7 +22,7 @@
   ],
   "tray": {
     "icon-size": 15,
-    "spacing": 6 
+    "spacing": 8
   },
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -53,10 +55,11 @@
     "tooltip-format-enumerate-connected": "{device_alias}"
   },
   "battery": {
+    "interval": 3,
     "states": {
       "good": 95,
       "warning": 30,
-      "critical": 15 
+      "critical": 15
     },
     "format": "{icon} {capacity}%",
     "format-charging": " {capacity}%",

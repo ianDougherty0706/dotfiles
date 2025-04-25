@@ -1,4 +1,9 @@
-@import url('./mocha.css');
+@define-color text #f0f0f0;
+@define-color base #1d1d20;
+@define-color red #fb4934;
+@define-color orange #fe8019;
+@define-color tooltip #1d1d20;
+@define-color tooltip-border #2e2e32;
 
 * {
   background: transparent;
@@ -9,22 +14,26 @@
   font-weight: bold;
   font-size: 15px;
   min-height: 0;
+  padding-bottom: 0;
 }
 
 tooltip {
-  background: #0c0d0e;
-  border-radius: 4px;
+  background: @tooltip;
+  border: 1px solid @tooltip-border;
+  border-radius: 6px;
 }
 
 window {
   background: transparent;
-  border-radius: 4px;
+  border-radius: 6px;
   border: 1px solid transparent;
 }
 
 #workspaces button {
   color: rgba(205, 214, 244, 0.4);
   padding: 4px;
+  margin-top: -2px;
+  padding-bottom: 0;
 }
 
 #workspaces button.active {
@@ -58,18 +67,15 @@ window {
 }
 
 #tray menu{
-  background: #0c0d0e;
+  background: @tooltip;
   border-radius: 4px;
+  border: 1px solid @tooltip-border;
 }
 
 #clock {
   color: @text;
   margin-right: 4px;
 }
-
-#bluetooth {
-  color: @blue;
-} 
 
 #pulseaudio {
   color: @text;
@@ -80,7 +86,7 @@ window {
 }
 
 #battery.warning {
-  color: @peach;
+  color: @orange;
 }
 
 #battery.critical {

@@ -156,7 +156,7 @@ inputbar {
     children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
 }
 
-case-indicator, num-rows, num-filtered-rows, textbox-num-sep, textbox-prompt-colon {
+case-indicator, num-rows, num-filtered-rows, textbox-num-sep, textbox-prompt-colon, prompt {
     enabled: false;
 }
 
